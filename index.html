@@ -294,9 +294,10 @@
 
     <!-- SECTION: Kontoinhaber -->
     <div id="section-kontoinhaber" class="section-content" style="display:none;">
-      <h3>Kontoinhaber: Volker Trippel</h3>
+      <h3>Zugangsinstitut : AEDO S.R.O</h3>
       <div class="two-columns">
         <div class="card-box">
+          <p><strong>Kontoinhaber:</strong><br>Volker Trippel</p>
           <p><strong>Kontonummer:</strong><br>0051757368</p>
           <p><strong>Bankleitzahl:</strong><br>20220800</p>
           <p><strong>IBAN:</strong><br>DE25202208000051757368</p>
@@ -307,6 +308,13 @@
           <p><strong>PLZ:</strong><br>63225</p>
           <p><strong>Ort:</strong><br>Langen</p>
           <p><strong>Land:</strong><br>Deutschland</p>
+          <p><strong>Nationalität:</strong><br>Deutsch</p>
+
+        </div>
+        <div class="card-box">
+          <p><strong>Hinweis zur Abwicklung:</strong>
+          <p style="font-size: 13px;">
+Ihre Festgeldanlage wird in Zusammenarbeit mit einem regulierten Partnerinstitut abgewickelt, das die gesetzlichen Anforderungen für grenzüberschreitende Finanztransaktionen erfüllt. Dies garantiert eine sichere Abwicklung im Einklang mit deutschen, europäischen und Schweizer Vorschriften, insbesondere dem Schweizer Bankengesetz (BankG), das unter der Aufsicht der FINMA steht und die Integrität Ihrer Investition sichert.</p>
         </div>
       </div>
     </div>
@@ -337,9 +345,10 @@
           <p><strong>Betrag CHF:</strong><br><span class="green">CHF 46.440,00</span></p>
           <p><strong>Betrag EUR:</strong><br><span class="green">EUR 50.000,00</span></p>
           <p>Kurs: 0.9288 (EUR/CHF)</p>
+          <p><strong>Vertragseingang:</strong><br>in Vorbereitung</p>
+
         </div>
         <div class="card-box">
-          <p><strong>Vertragseingang:</strong><br>in Vorbereitung</p>
           <p><strong>Zahlungsinformationen:</strong><br>
           <p><strong>Zugangsinstitut :</strong>&nbsp;Aedo s.r.o<br>
           <p><strong>Reference:</strong>&nbsp;Volker Trippel<br>
@@ -415,7 +424,7 @@
   function checkLogin() {
     const username = document.getElementById('username').value.trim();
     const password = document.getElementById('password').value.trim();
-    if (username.toLowerCase() === 'trippel' && password === 'k3pe1tu2') {
+    if (username.toLowerCase() === 'c' && password === 'c') {
       sessionStorage.setItem("loggedIn", "true");
       document.getElementById('login-screen').style.display = 'none';
       document.getElementById('dashboard').style.display = 'block';
